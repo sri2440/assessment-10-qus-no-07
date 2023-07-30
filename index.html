@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Assessment 10</title>
+</head>
+<body>
+    <h2>Assessment 10 - Qus.no.07</h2>
+<script>
+//Write a JavaScript program that prompts the user to enter a year using prompt. 
+//Convert the input to a number and then check if it's a leap year using the following conditions: 
+//If the year is divisible by 4 but not divisible by 100, or it's divisible by 400, it's a leap year. 
+//Otherwise, it's not a leap year. Display an alert with the corresponding message. 
+
+
+// Ask the user to enter a year
+const yearInput = prompt("Enter a year:");
+
+// Convert the input to a number
+const year = parseInt(yearInput);
+
+// Check if it's a leap year
+if (!isNaN(year)) {
+  if ((year % 4 === 0 && year % 100 !== 0) || year % 400 === 0) {
+    alert(`${year} is a leap year.`);
+  } else {
+    alert(`${year} is not a leap year.`);
+  }
+} else {
+  alert("Please enter a valid year.");
+}
+
+</script>
+</body>
+</html>
